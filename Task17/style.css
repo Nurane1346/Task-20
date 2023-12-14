@@ -1,0 +1,34 @@
+.box{
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in .7s;
+    background-color: #96ff0d;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1;
+    transition: all ease-in .7s;
+}
+.img1, .img2{
+    transform: translateY(0px);
+}
+.box:hover{
+    background-color: #3b3a3a;
+}
+.box:hover .img1{
+    transform: translateY(-305px);
+    scale: 0.5;
+}
+.box:hover .img2{
+    transform: translateY(-280px);
+    scale: 1.1;
+}
